@@ -1,0 +1,158 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Responsive Grids</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+	body {
+			 font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+		  background-image: url('../images/Page%20Background@2x.png');
+		  background-attachment: fixed;
+		}
+
+		.row{
+			margin: 30px 0px;
+		}
+
+		p{
+			text-align: justify;
+		}
+
+		div.content-wrapper{
+			background-color:  rgb(11, 120, 167);
+			padding: 0px 24px;
+			border-color: white;
+			background-clip: content-box;
+		}
+
+		[class*='col-']{
+			color: ghostwhite;
+			background-color: rgb(52, 71, 123);
+			padding: 0px 15px;
+			margin: 0px 0px;
+		}
+
+
+		[class*='col-']:last-of-type {
+			padding-right: 0px;
+			margin-right: 0px;
+		}
+
+		[class*='col-']:first-of-type {
+			padding-left: 0px;
+			margin-left: 0px;
+		}
+
+
+		/*apply styles for smaller displays*/
+		@media only screen and (max-width: 767px) {
+
+			.container{
+				padding: 0px;	
+			}
+
+			[class*='col-']{
+			background-color: rgb(52, 71, 123);
+			color: ghostwhite;
+			padding: 0px 0px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default"> Responsive Nav bar </nav>
+	<div class="container">
+		<!--1-1 item starts here-->
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="content-wrapper clearfix"> 1-1
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iusto ducimus error laudantium magnam eveniet vitae ad, blanditiis ratione consequuntur sit praesentium fugit distinctio, nesciunt exercitationem repellat labore dicta ea! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos animi assumenda quos ab id, cum laudantium eligendi praesentium aperiam voluptates nobis voluptatem suscipit itaque. Consequatur nulla provident ullam perspiciatis, architecto.</p>
+				</div>
+			</div>
+		</div>
+		<!--1-1 item ends here-->
+		<!-- 1-2 items start here-->
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<div class="content-wrapper clearfix"> 1-2
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id illum earum provident quas similique voluptate rerum nesciunt sapiente cumque! Atque totam optio odit rerum repellendus id quasi aliquid minima error! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ea voluptatem aliquid sequi velit ipsa, veniam provident voluptate adipisci ratione delectus inventore. Illum omnis impedit aliquid ad odit veniam, beatae.</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="content-wrapper clearfix"> 1-2
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id illum earum provident quas similique voluptate rerum nesciunt sapiente cumque! Atque totam optio odit rerum repellendus id quasi aliquid minima error! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ea voluptatem aliquid sequi velit ipsa, veniam provident voluptate adipisci ratione delectus inventore. Illum omnis impedit aliquid ad odit veniam, beatae.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 1-2 items ends here-->
+		<!-- 1-3 items start here-->
+		<div class="row">
+			<div class="col-sm-4 col-md-4">
+				<div class="content-wrapper clearfix"> 1-3
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni, odio suscipit necessitatibus.</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<div class="content-wrapper clearfix"> 1-3
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni, odio suscipit necessitatibus.</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<div class="content-wrapper clearfix"> 1-3
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni, odio suscipit necessitatibus.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 1-3 items ends here-->
+		<!-- 1-4 items start here-->
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="content-wrapper clearfix"> 1-4
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni. </p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="content-wrapper clearfix"> 1-4
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni.</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="content-wrapper clearfix"> 1-4
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni. </p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="content-wrapper clearfix"> 1-4
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni, odio suscipit necessitatibus.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 1-4 items ends here-->
+		<!-- 2-3 1-3 items start here-->
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="content-wrapper clearfix"> 2-3
+					<p class="placeholder-text">In it except to so temper mutual tastes mother. Interested cultivated its continuing now yet are. Out interested acceptance our partiality affronting unpleasant why add. Esteem garden men yet shy course. Consulted up my tolerably sometimes perpetual oh. Expression acceptance imprudence particular had eat unsatiable. Its sometimes her behaviour are contented. Do listening am eagerness oh objection collected. Together gay feelings continue juvenile had off one. Unknown may service subject her letters one bed. Child years noise ye in forty. Loud in this in both hold. My entrance me is disposal bachelor remember relation. Up is opinion message manners correct hearing husband my. Disposing commanded dashwoods cordially depending at at. Its strangers who you certainty earnestly resources suffering she. Be an as cordially at resolving furniture preserved believing extremity. Easy mr pain felt in. Too northward affection additions nay. He no an nature ye talent houses wisdom vanity denied. </p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="content-wrapper clearfix"> 1-3
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas asperiores ipsam earum qui dolores sunt, quis expedita. Neque commodi alias asperiores, sint consectetur ut? Dicta suscipit reiciendis sequi laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur quia, libero dolores reprehenderit optio eos nemo? Vitae minus maxime iure autem culpa delectus dicta magni, odio suscipit necessitatibus.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 2-3 1-3 items ends here-->
+	</div>
+</body>
+
+</html>

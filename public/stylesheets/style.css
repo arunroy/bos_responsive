@@ -1,0 +1,53 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/Page%20Background@2x.png');
+  background-attachment: fixed;
+}
+
+.row{
+	margin: 30px 0px;
+}
+
+p{
+	text-align: justify;
+}
+
+div.content-wrapper{
+	background-color:  rgb(11, 120, 167);
+	padding: 0px 24px;
+	border-color: white;
+	background-clip: content-box;
+}
+
+[class*='col-']{
+	color: ghostwhite;
+	background-color: rgb(52, 71, 123);
+	padding: 0px 15px;
+	margin: 0px 0px;
+}
+
+
+[class*='col-']:last-of-type {
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
+[class*='col-']:first-of-type {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+
+/*apply styles for smaller displays*/
+@media only screen and (max-width: 767px) {
+	
+	.container{
+		padding: 0px;	
+	}
+	
+	[class*='col-']{
+	background-color: rgb(52, 71, 123);
+	color: ghostwhite;
+	padding: 0px 0px;
+	}
+}
